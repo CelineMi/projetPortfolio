@@ -185,7 +185,8 @@ html {
 }
 
 body {
-  background-color: black;
+  background-image:url(img/fond.png);
+  background-repeat:repeat;
 }
 
 #accueil {
