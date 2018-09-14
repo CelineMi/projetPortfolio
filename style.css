@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
   font-family: "Press Start 2P", cursive;
   src: url(https://fonts.googleapis.com/css?family=Press+Start+2p);
 }
@@ -15,31 +15,11 @@ html {
 }
 
 body {
-  background-color: black;
+  background-image: url("img/fond.png");
 }
 
 #accueil {
   margin-top: 30px;
-}
-
-.text-center {
-  width: 60%;
-  text-align: center;
-}
-
-.notrelogo {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 50%;
-}
-
-.monprofil {
-  display: flex;
-  justify-content: space-around;
-  color: white;
-  max-width: 200px;
-  text-align: center;
 }
 
 .navbar {
@@ -47,46 +27,7 @@ body {
   margin-right: -30px;
 }
 
-/* footer { 
-  padding-top: 10px;
-  background: #f8f9fa;
-  width: 110%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}*/
-/*
-.footeraccueil {
-  margin-left: -30px;
-  margin-right: -30px;
-  padding-top: 10px;
-  background: #f8f9fa;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-
-.logowcs {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-}
-
-.flex-column {
-  text-align: center;
-}
-
-.card {
-  background: transparent;
-  width: 95%;
-  margin: 0 auto;
-  margin-top: 30px;
-}
-
-.card-text {
-  margin-top: -10%;
-}
-
+/* BLOC IMAGES */
 .no-gutter {
   width: 90%;
   margin: 0 auto;
@@ -94,30 +35,34 @@ body {
   padding-left: 20px;
 }
 
-.haut {
-  padding: 5px;
-  max-width: 85%;
-  margin: 0 auto;
-  text-align: center;
-  font-family: "Press Start 2P";
-  background-color: transparent;
-  color: white;
-  font-size: 30px;
+.notrelogo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-right: 80px;
 }
 
-.bas {
-  padding: 5px;
-  max-width: 90%;
+.blocprofil {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  max-width: 250px;
+  text-align: center;
+  position: relative;
+  background: transparent;
+  width: 95%;
   margin: 0 auto;
+  margin-top: 30px;
+}
+
+.nomprofil {
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
   text-align: center;
   font-family: "VT323";
-  background-color: transparent;
-  color: white;
-  font-size: 24px;
-}
-
-ul {
-  list-style: none;
+  font-size: 50px;
 }
 
 /* entire container, keeps perspective */
@@ -134,8 +79,8 @@ ul {
 .flip-container,
 .front,
 .back {
-  width: 320px;
-  height: 480px;
+  width: 250px;
+  height: 360px;
   margin: auto;
 }
 
@@ -157,6 +102,11 @@ ul {
   left: 0;
 }
 
+.card-img-top {
+  max-width: 250px;
+  max-height: 250px;
+}
+
 /* front pane, placed above back */
 .front {
   /* for firefox 31 */
@@ -168,62 +118,8 @@ ul {
   transform: rotateY(180deg);
 }
 
-@font-face {
-  font-family: "Press Start 2P", cursive;
-  src: url(https://fonts.googleapis.com/css?family=Press+Start+2p);
-}
-
-@font-face {
-  font-family: "VT323", monospace;
-  src: url(https://fonts.googleapis.com/css?family=VT323);
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-  margin: 0;
-}
-
-body {
-  background-image:url(img/fond.png);
-  background-repeat:repeat;
-}
-
-#accueil {
-  margin-top: 30px;
-}
-
-.text-center {
-  width: 60%;
-  text-align: center;
-}
-
-.notrelogo {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 50%;
-}
-
-.monprofil {
-  display: flex;
-  justify-content: space-around;
-  color: white;
-  max-width: 300px;
-  text-align: center;
-}
-
-.card-img-top {
-  max-width: 300px;
-  max-height: 300px;
-}
-
-.navbar {
-  margin-left: -30px;
-  margin-right: -30px;
-}
-
-footer {
+/*FOOTER */
+.footeraccueil {
   margin-left: -30px;
   margin-right: -30px;
   padding-top: 10px;
@@ -239,29 +135,12 @@ footer {
   object-fit: cover;
 }
 
-.flex-column {
-  text-align: center;
+ul {
+  list-style: none;
 }
 
-.card {
-  background: transparent;
-  width: 95%;
-  margin: 0 auto;
-  margin-top: 30px;
-}
-
-.card-text {
-  margin-top: -10%;
-}
-
-.no-gutter {
-  width: 90%;
-  margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.haut {
+/*JUMBOTRONS */
+.jumbohaut {
   padding: 5px;
   max-width: 90%;
   margin: 0 auto;
@@ -272,7 +151,7 @@ footer {
   font-size: 30px;
 }
 
-.bas {
+.jumbobas {
   padding: 5px;
   max-width: 90%;
   margin: 0 auto;
@@ -281,16 +160,4 @@ footer {
   background-color: transparent;
   color: white;
   font-size: 30px;
-}
-
-.nom {
-  color: white;
-}
-
-.flex-column {
-  text-align: center;
-}
-
-ul {
-  list-style: none;
 }
