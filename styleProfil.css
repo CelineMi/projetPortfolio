@@ -1,6 +1,10 @@
 /* General styling*/
 body {
-    background-image: url('Images/fond.png');
+    background-image: url('img/fond.png');
+}
+
+.container-fluid{
+    padding: 0px;
 }
 
 h1{
@@ -22,6 +26,10 @@ ul {
     color: white;
     border-radius: 3px;
     font-family: 'Press Start 2P', cursive;
+}
+
+.blackLink{
+    color: black;
 }
 
 /*Pacgum profil*/
@@ -74,12 +82,6 @@ ul {
     justify-content: space-around;
 }
 
-.hobbiesLogo {
-    display: block;
-    width: 22%;
-    height: 22%;
-}
-
 .blockquote-footer {
     text-align: right;
 }
@@ -92,12 +94,25 @@ ul {
 
 /*Social Network Icons*/
 .socialNetworkCard {
-    margin: 10px;
+    margin: 5px 10px;
 }
 
 .socialNetworkCardBody {
     display: flex;
     justify-content: space-around;
+}
+
+/*Return arrow*/
+.fa-arrow-circle-left{
+    margin: 5px 10px;
+}
+
+.fa-arrow-circle-left:hover{
+    color: white;
+}
+
+.desktopVersion {
+    display: none;
 }
 
 /*FOOTER*/
@@ -134,6 +149,22 @@ footer {
         width: 48%;
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+
+    .fa-arrow-circle-left{
+        margin: 5px 10px;
+    }
+
+    .desktopVersion {
+        display: block;
+    }
+
+    .desktopVersion:hover {
+        color: white;
+    }
+
+    .mobileVersion {
+        display: none;
     }
 }
 
